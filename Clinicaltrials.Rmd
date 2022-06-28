@@ -21,8 +21,8 @@ mutate(across(where(is.character), as.factor))
 ```
 
 ```{r}
-barchartGC(~newdata + Sex,data=ucdavis1)
-barchartGC(~newdata + Sex,data=ucdavis1, type="percent")
+barchartGC(~infected + vaxStatus,data=newdata)
+barchartGC(~infected + vaxStatus,data=newdata, type="percent")
 
 ```
 
