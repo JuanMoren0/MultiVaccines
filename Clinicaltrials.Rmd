@@ -20,11 +20,14 @@ newdata <- newdata %>%
 mutate(across(where(is.character), as.factor))
 ```
 
-```{r}
-barchartGC(~infected + vaxStatus,data=newdata)
-barchartGC(~infected + vaxStatus,data=newdata, type="percent")
 
-```
+
+
+
+
+
+
+
 
 The people that were infected the highest was the people that had no shots 
 
