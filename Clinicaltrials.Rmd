@@ -27,8 +27,12 @@ barchartGC(~infected + vaxStatus,data=newdata, type="percent")
 ```
 In the graph above we can see that frequency wise everyone has the same   chance to be effected by the virus, but looking at the percentages we can   see that everyone still has the same chance to get the virus but also we   can see in the Y section that people who didnt get the Vaccine have a   higher chance to get the virus then those who have taken some kind of   vaccine.  
 
-
-
+# Numerical Summary
+```{r}
+table1 <- xtabs(~infected + vaxStatus, data=newdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
 
 
