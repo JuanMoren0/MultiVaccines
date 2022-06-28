@@ -50,7 +50,7 @@ notice thep value, since its very small we need to run a different   test to hel
 # FisherXY.R
 
 ```{r}
-fisherXY = function(x, y, confL = 0, printAll=FALSE){
+fisherXY = function(x, y, confL = 0, printAll=TRUE){
   # Inputs: 
   #   x: factor variable, 2 levels
   #   y: factor variable, n levels
@@ -119,6 +119,8 @@ fisherXY = function(x, y, confL = 0, printAll=FALSE){
 fisherXY(newdata$infected,newdata$vaxStatus)
 ```
 Seeing the different types being compared to one another we can see   that there isn't a difference between taking the new vaccine and   the old vaccine, but both are better then taking no vaccine at all.  
+
+
 
 
 The people that were infected the highest was the people that had no shots 
