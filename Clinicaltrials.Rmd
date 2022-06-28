@@ -33,7 +33,7 @@ table1 <- xtabs(~infected + vaxStatus, data=newdata)
 rowPerc(table1)
 colPerc(table1)
 ```
-
+Looking at the data from a numerical standpoint we can see that, the   grapg is being reflected here where everyone has the same chance   to be infected prior to getting a vaccine and that chance lowers   depending if the person has gotten a vaccine or not.  
 
 
 
